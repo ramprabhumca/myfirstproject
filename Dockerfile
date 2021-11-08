@@ -10,7 +10,7 @@ RUN add-apt-repository -y -u ppa:malteworld/ppa
 RUN apt update
 RUN apt -y upgrade
 RUN apt -y install libfile-slurp-perl libssl-dev
-RUN cpanm --force Net::AMQP::RabbitMQ;
+#RUN cpanm --force Net::AMQP::RabbitMQ;
 RUN apt -y clean
 RUN apt -y autoclean
 RUN apt -y autoremove
